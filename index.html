@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Donoso-Echenique</title>
+
+    <script>
+        document.documentElement.classList.toggle(
+            'light-mode',
+            localStorage.getItem('theme') === 'light'
+        );
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<script src="C:\Users\migue\OneDrive\Escritorio\miguel-website\dark-light button.js" defer></script>
+
+
+<body>
+
+    <header>
+
+
+        <div><a href="index.html" class="nounderline">Miguel Donoso-Echenique</a></div>
+
+        <nav>
+            <a href="Research.html">Research</a>
+	    <a href="Talks.html">Talks</a>
+            <a href="Teaching.html">Teaching</a>
+	    <a href="AI-statement.html">AI statement</a>
+
+<!-------------- dark-light button ------------->
+
+
+<div class="toggle-container">
+    <span class="name" id="theme-name" aria-hidden="true">
+    <span class="moon"> ⏾ </span>
+    <span class="sun"> ☀︎ </span>
+</span>
+    <button class="toggle-button"
+        onclick="switchTheme()"
+        type="button"
+        aria-label="Toggle light and dark mode">
+    <span class="toggle-circle"></span>
+</button></div>
+
+
+        </nav>
+    </header>
+
+
+
+<!-------------- / ------------->
+
+
+<main>
+
+    <div class="intro">
+        <div>
+
+	<p>
+                I am a PhD student in the <a href="https://www.uni-muenster.de/MathematicsMuenster/" target="_blank">Cluster of Excellence "Mathematics Münster"</a> at Universität Münster under the supervision of <a href="http://dgkerr.com/" target="_blank">David Kerr</a>. I completed my MSc and BSc studies at PUC Chile. 
+	</p>
+
+	<p>
+I am interested in discrete groups and semigroups, particularly in studying their asymptotic properties and invariants, and their connections with ergodic theory, probability and functional analysis. The following is a list of topics I am very interested in.
+
+<ul>
+	<li>Measured group theory, <i>e.g.</i> the first l^2-Betti number, cost and sofic dimension of groups and their p.m.p. actions.</li>
+	<li> Asymptotic invariants of finitely generated residually finite groups, such as the rank gradient and homology gradients.</li>
+	<li>Convex analysis of the simplex of invariant probability measures of group and monoid actions, including Bauer/Poulsen-like dichotomies, approximations by finitely supported measures, etc.</li>
+	<li>Rings and algebras associated with groups and semigroups, particularly the l^1-algebra and C*-algebraic constructions for semigroups.</li>
+</ul>
+	</p>
+        </div>
+
+
+
+        <img src="images/oberwolfach.jpg" class="profile-picture"
+             alt="Miguel Donoso at Oberwolfach">
+    </div>
+
+<div><p style="padding: 10px 0px; text-align: center; font-size: 16px;"> Contact emails: mdonosoe@uni-muenster.de, migueldonosoe@gmail.com </p></div>
+</main>
+
+</body>
+</html>

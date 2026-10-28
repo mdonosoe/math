@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Donoso-Echenique</title>
+
+<style>
+#panel {
+  display: none;
+}
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("panel");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<script>
+        document.documentElement.classList.toggle(
+            'light-mode',
+            localStorage.getItem('theme') === 'light'
+        );
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="C:\Users\migue\OneDrive\Escritorio\miguel-website\dark-light button.js" defer></script>
+
+<body>
+
+<header>
+
+
+        <div><a href="index.html" class="nounderline">Miguel Donoso-Echenique</a></div>
+
+<nav>
+            <a href="Research.html">Research</a>
+	    <a href="Talks.html">Talks</a>
+            <a href="Teaching.html">Teaching</a>
+	    <b href="AI-statement.html">AI statement</b>
+	    
+<!-------------- dark-light button ------------->
+
+<div class="toggle-container">
+    <span class="name" id="theme-name" aria-hidden="true">
+    <span class="moon"> ⏾ </span>
+    <span class="sun"> ☀︎ </span>
+</span>
+    <button class="toggle-button"
+        onclick="switchTheme()"
+        type="button"
+        aria-label="Toggle light and dark mode">
+    <span class="toggle-circle"></span>
+</button></div>
+
+</nav>
+
+</header>
+    
+
+<!-------------- / ------------->
+
+
+
+<main>
+	<div class="subtitle" style="font-weight: bold; font-size: 26px; text-transform: none">Statement on AI usage in mathematics</div>
+        
+
+	<p>
+        I am a member of the <a href="https://www.ahmath.org/" target="_blank">Association for Human Mathematics (AHM)</a>, which "protects mathematics as a human endeavor against the threat of artificial intelligence". In a nutshell, my view is that artificial intelligence is a useful tool, with room for a responsible usage of it, but I am concerned about the negative impact it presents for the human discipline of mathematics, the environment, and the learning process of future generations, among others. <button class="showmore" onclick="myFunction()">More concretely...</button>
+        </p>
+
+	<ul id="panel" style="display: none">
+ 
+	<li>The increasingly high volume of arXiv and journal submissions makes almost impossible for mathematicians to keep up with the latest progress, leave alone digest the proofs of new results. The quality of new articles inevitably decreases in average, in view of the need to compete with AI models that generate documents in a matter of hours or minutes.</li>
+
+	<li>Some AI companies are showing a concerning (though not surprising) lack of ethical code, poorly acknowledging the work of others, and allegedly committing data theft and other forms of plagiarism.</li>
+
+
+	<li>The growth of AI infrastructure poses a <a href="https://news.un.org/en/story/2026/06/1167658" target="_blank">major ecological threat</a>, with an energy consumption equivalent to the one of billions of people per data center, and growing amounts of greenhouse gas emissions, water consumption and electronic waste.
+
+	<li>Relying heavily on AI for learning, particularly at the undergraduate stage and earlier, could obstruct the development of abilities like critical thinking, handling technical details, outlining strategies or structuring presentations.</li>
+	 </ul>
+
+	<p>
+	For this reason, I restrict my use of AI models to proofreading and literature exploration, and keep it as minimal as possible. I do not submit AI-generated texts, nor documents whose mathematical content has been originally obtained by prompting an AI model.
+	</p>
+
+	<p>
+	Everything is changing quickly, and the above determination will be subject to constant update. This version: October 2026.
+        
+	</div>
+</main>
+
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("panel");
+      
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
