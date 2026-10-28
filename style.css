@@ -197,7 +197,9 @@ html.animate-theme body {
 
 #theme-name .sun {
     display: none;
+    
 }
+
 
 html.light-mode #theme-name .moon {
     display: none;
@@ -213,7 +215,8 @@ html.light-mode #theme-name .sun {
     
 }
 .name {
-    padding: 0.8px 4px 0px 0px;
+    margin: -1px 4px 2px 0px;
+    vertical-align: middle;
 }
 
 html.light-mode .profile-picture {
