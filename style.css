@@ -249,21 +249,58 @@ nav a:hover::after {
 }
 
 
-
 /* ----------------- Mobile-friendly --------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
 @media (max-width: 700px) {
+    main {
+        padding: 20px;
+    }
+
     .intro {
+        display: flex;
         flex-direction: column;
-        padding: 40px 25px;
+        align-items: stretch;
+
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+
+        padding: 0;
         gap: 20px;
     }
 
-    .intro > p {
+    .intro > div {
         width: 100%;
         max-width: none;
         min-width: 0;
         flex: none;
-        box-sizing: border-box;
+    }
+
+    .intro p {
+        margin: 0 0 16px;
+        line-height: 1.6;
+    }
+
+    .intro ul {
+        margin: 0 0 16px;
+        padding-left: 24px;
+    }
+
+    .intro li {
+        margin-bottom: 12px;
+    }
+
+    main p {
+        overflow-wrap: anywhere;
     }
 
     .profile-picture {
@@ -271,9 +308,17 @@ nav a:hover::after {
         max-width: 400px;
         height: auto;
         align-self: center;
+        order: -1;
     }
 
     nav {
-        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 100%;
+        min-width: 0;
+        gap: 10px 15px;
+        padding: 12px 16px;
     }
 }
